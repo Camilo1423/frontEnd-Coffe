@@ -1,0 +1,131 @@
+/* importacion de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    /* definicion de font family y fonts weight */
+    --fnt-roboto: 'Roboto', sans-serif;
+
+    --fnt-thin:100;
+    --fnt-light:300;
+    --fnt-regular:400;
+    --fnt-medium:500;
+    --fnt-bold:700;
+    --fnt-black:900;
+
+    /* definicion de paleta de colores */
+    --color-green: #2ECC71;
+    --color-coffe: #873600;
+    --color-white: #FDFEFE;
+    --color-yellow: #F7DC6F;
+    --color-black: #070707;
+    --color-gray: #CACFD2;
+}
+
+/* estandalizando el comportamiento de las etiquetas */
+a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: var(--fnt-regular);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-yellow);
+    padding: 7px 20px;
+}
+
+body {
+    font-family: var(--fnt-roboto);
+}
+
+input {
+    font-family: var(--fnt-roboto);
+    padding: 5px 20px;
+}
+
+input::placeholder {
+    font-family: var(--fnt-roboto);
+    color: var(--color-gray);
+}
+
+/* globalizando display flex */
+.dflex {
+    display: flex;
+}
+
+/* section de aling-items */
+.daling-center {
+    align-items: center;
+}
+
+.daling-end {
+    align-items: flex-end;
+}
+
+.daling-start {
+    align-items: flex-start;
+}
+
+/* section de flex-direction */
+.ddirection-column {
+    flex-direction: column;
+}
+.ddirection-columnreverse {
+    flex-direction: column-reverse;
+}
+
+.ddirection-rowreverse {
+    flex-direction: row-reverse;
+}
+
+/* section de justify-content */
+.djustify-center {
+    justify-content: center;
+}
+
+.djustify-spacebetween {
+    justify-content: space-between;
+}
+
+.djustify-spaceevenly {
+    justify-content: space-evenly;
+}
+
+.djustify-spacearound {
+    justify-content: space-around;
+}
+
+.djustify-end {
+    justify-content: flex-end;
+}
+
+.djustify-start {
+    justify-content: flex-start;
+}
+
+/* Espacing lista */
+
+.mt-10 {
+    margin: 0 10px;
+}
+
+/* Estilizado de iconos */ 
+
+.circleIcon {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.circleIcon:hover {
+    transform: scale(1.1);
+}

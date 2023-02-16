@@ -4,6 +4,7 @@ import NavBar from './components/NavBar.jsx'
 import DomiciliosPage from './pages/DomiciliosPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import MenuPage from './pages/MenuPage.jsx'
+import './css/main.css'
 
 const App = () => {
   return (
